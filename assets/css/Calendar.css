@@ -1,0 +1,73 @@
+/* calendar.css*/
+.calendar{
+    /*   搭配:    長x高   字體大小   如：400x400  15    or    600x600   21     or  800x800   30*/
+    height: 800px;      /* 可修改*/
+    width: 800px;       /* 可修改*/
+    font-size:30px;   /* 可修改*/
+    border:8px solid #ff6678;  
+    border-radius: 20px;
+    border-style: ridge;
+    margin: auto;
+    background-color:#ffe6e9;
+}
+/*下面的字體與行高等等都用百分比或em的形式
+只要上面修改font-size、width、height，下面會對應做出改變*/
+.calendartitle{
+    position: relative;
+    height: 18%;
+    text-align: center;
+    border-bottom: 2px solid #ff6678;
+}
+/*Prev & Next 箭頭*/
+.calendartitle a{
+    font-size: 2em;
+    text-decoration: none;
+}
+#prev{                                             
+    position: relative;
+    top:-2.5em;
+    left: -5em;
+}
+#next{
+    position: relative;
+    top:-2.5em;
+    left: 5em;
+}
+/*月曆顯示列*/
+.bodylist{
+    padding: 0px 10px;
+}
+.bodylist ul{
+    width:100%;
+    font-family:"goudy old style",san-serif;
+    font-weight:bold;
+    padding: 0px;
+    margin:0px;
+}
+
+.bodylist ul li{
+    width:14.28%;
+    height: 2.6em;
+    display:block;
+    float:left;
+    list-style-type:none;
+    line-height: 2.6em;
+    box-sizing:border-box;
+    text-align:center;
+}
+
+/*顏色設定*/
+.lightpink{
+    color:#ffb3b9; /*淺粉紅*/
+}
+.darkgrey{
+    color:#565656; /*深灰*/
+}
+.darkpink{
+    color:#ff6678; /*深粉紅*/
+}
+.todaybox{
+    background:#ffcace; /*本日-背景*/
+    border-radius:20px;
+    border:2px solid;
+}
